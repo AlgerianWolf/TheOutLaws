@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث - The Outlaws</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>The Outlaws</h1>
+        <nav>
+            <a href="index.html" class="text-white mx-2">الرئيسية</a>
+            <a href="profile.html" class="text-white mx-2">الملف الشخصي</a>
+            <a href="feed.html" class="text-white mx-2">الجدول الزمني</a>
+            <a href="messages.html" class="text-white mx-2">الرسائل</a>
+            <a href="settings.html" class="text-white mx-2">الإعدادات</a>
+            <a href="logout.html" class="text-white mx-2">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h2 class="text-center">البحث</h2>
+        <form id="search-form" class="mb-4">
+            <div class="form-group">
+                <input type="text" id="search-query" class="form-control" placeholder="ابحث عن مستخدمين أو محتوى" required>
+            </div>
+            <button type="submit" class="btn btn-primary">بحث</button>
+        </form>
+        <div id="search-results">
+            <!-- Example result -->
+            <div class="border p-3 mb-3 rounded">
+                <h4>نتيجة البحث</h4>
+                <p>محتوى أو مستخدمين تم العثور عليهم.</p>
+            </div>
+            <!-- More results -->
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>&copy; 2024 The Outlaws. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

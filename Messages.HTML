@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرسائل - The Outlaws</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>The Outlaws</h1>
+        <nav>
+            <a href="index.html" class="text-white mx-2">الرئيسية</a>
+            <a href="profile.html" class="text-white mx-2">الملف الشخصي</a>
+            <a href="feed.html" class="text-white mx-2">الجدول الزمني</a>
+            <a href="messages.html" class="text-white mx-2">الرسائل</a>
+            <a href="settings.html" class="text-white mx-2">الإعدادات</a>
+            <a href="logout.html" class="text-white mx-2">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h2 class="text-center">الرسائل</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">المستخدم 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">المستخدم 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">المستخدم 3</a>
+                    <!-- More users -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="border p-3 mb-3 rounded">
+                    <h4>المحادثة مع المستخدم 1</h4>
+                    <div class="border p-2 mb-2 rounded">
+                        <p><strong>المستخدم 1:</strong> مرحبا! كيف حالك؟</p>
+                    </div>
+                    <div class="border p-2 mb-2 rounded">
+                        <p><strong>أنت:</strong> أنا بخير، شكرًا! كيف حالك أنت؟</p>
+                    </div>
+                    <!-- More messages -->
+                </div>
+                <form id="message-form">
+                    <div class="form-group">
+                        <textarea id="message" class="form-control" rows="3" placeholder="اكتب رسالة..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>&copy; 2024 The Outlaws. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
