@@ -1,9 +1,8 @@
-// Script for handling search functionality
-document.getElementById('searchForm').addEventListener('submit', function(event) {
+document.getElementById('search-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const searchQuery = document.getElementById('searchQuery').value;
-    console.log('بحث:', searchQuery);
+    const query = document.getElementById('search-query').value;
 
-    // Add logic to perform the search and display results
+    // أضف هنا كود البحث باستخدام Firebase
+    console.log('Search query:', query);
 });

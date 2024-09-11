@@ -1,106 +1,72 @@
-/* قاعدة عامة لجميع العناصر */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     background-color: #f4f4f4;
 }
 
-/* نمط شريط التنقل */
 nav {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
+    padding: 10px;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: #555;
 }
 
-/* نمط الأشكال العامة */
 .container {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1, h2, h3 {
-    color: #333;
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form textarea {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-form button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+button {
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-form button:hover {
-    background-color: #575757;
+button:hover {
+    background-color: #45a049;
 }
 
-/* نمط عناصر الصفحة */
-.profile-info,
-.feed-post,
-.message-item {
-    padding: 15px;
-    margin-bottom: 10px;
+.profile-info {
+    text-align: center;
+}
+
+.posts, .messages-list, .search-results {
+    border: 1px solid #ddd;
+    padding: 20px;
     background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.profile-info img,
-.feed-post img,
-.message-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* نمط الرسائل والبحث */
-.messages-list,
-.search-results {
-    list-style: none;
-    padding: 0;
-}
-
-.messages-list li,
-.search-results li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.messages-list li:last-child,
-.search-results li:last-child {
-    border-bottom: none;
 }

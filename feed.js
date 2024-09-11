@@ -1,9 +1,8 @@
-// Script for handling feed functionality
-document.getElementById('newPostForm').addEventListener('submit', function(event) {
+document.getElementById('new-post-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const newPostContent = document.getElementById('newPost').value;
-    console.log('مشاركة جديدة:', newPostContent);
+    const postContent = document.getElementById('new-post').value;
 
-    // Add logic to save the post and display it
+    // أضف هنا كود إضافة مشاركة جديدة باستخدام Firebase
+    console.log('New post:', postContent);
 });

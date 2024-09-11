@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE OUTLAWS - الإعدادات</title>
+    <title>THE OUTLAWS - الرسائل</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,18 +11,21 @@
         <a href="index.html">الصفحة الرئيسية</a>
         <a href="profile.html">الملف الشخصي</a>
         <a href="feed.html">الجدول الزمني</a>
-        <a href="messages.html">الرسائل</a>
+        <a href="settings.html">الإعدادات</a>
         <a href="search.html">البحث</a>
         <a href="help.html">المساعدة</a>
     </nav>
     <div class="container">
-        <h1>الإعدادات</h1>
-        <form id="settings-form">
-            <label for="new-password">كلمة المرور الجديدة:</label>
-            <input type="password" id="new-password" placeholder="أدخل كلمة المرور الجديدة">
-            <button type="submit">تحديث الإعدادات</button>
+        <h1>الرسائل</h1>
+        <div class="messages-list">
+            <!-- ستظهر الرسائل هنا -->
+        </div>
+        <form id="new-message-form">
+            <input type="text" id="message-recipient" placeholder="إلى" required>
+            <textarea id="message-content" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <button type="submit">إرسال</button>
         </form>
     </div>
-    <script src="js/settings.js"></script>
+    <script src="js/messages.js"></script>
 </body>
 </html>

@@ -1,2 +1,2 @@
-// Script for help page functionality
-console.log('صفحة المساعدة');
+// يمكنك إضافة وظائف المساعدة هنا
+console.log('Help page scripts loaded.');

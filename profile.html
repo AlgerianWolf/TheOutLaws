@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الملف الشخصي</title>
+    <title>THE OUTLAWS - الملف الشخصي</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="profile.html">الملف الشخصي</a>
-            <a href="settings.html">الإعدادات</a>
-        </nav>
-    </header>
-    <main>
+    <nav>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="feed.html">الجدول الزمني</a>
+        <a href="messages.html">الرسائل</a>
+        <a href="settings.html">الإعدادات</a>
+        <a href="search.html">البحث</a>
+        <a href="help.html">المساعدة</a>
+    </nav>
+    <div class="container">
         <h1>الملف الشخصي</h1>
-        <section>
-            <h2>معلومات المستخدم</h2>
-            <p>الاسم: [اسم المستخدم]</p>
-            <p>البريد الإلكتروني: [البريد الإلكتروني]</p>
-            <!-- يمكن إضافة معلومات أخرى هنا -->
-        </section>
-        <section>
-            <h2>المشاركات السابقة</h2>
-            <!-- قائمة بالمشاركات السابقة -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 THE OUTLAWS. جميع الحقوق محفوظة.</p>
-    </footer>
+        <div class="profile-info">
+            <img src="path/to/profile-picture.jpg" alt="صورة الملف الشخصي">
+            <p>الاسم: <span id="profile-name">اسم المستخدم</span></p>
+            <p>البريد الإلكتروني: <span id="profile-email">البريد الإلكتروني</span></p>
+            <button id="edit-profile">تعديل الملف الشخصي</button>
+        </div>
+    </div>
     <script src="js/profile.js"></script>
 </body>
 </html>
